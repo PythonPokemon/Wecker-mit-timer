@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wecker und Timer</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Wecker und Timer</h1>
+    <div class="form-group">
+      <label for="time">Weckzeit/Timerzeit (Format: HH:MM:SS)</label>
+      <input type="text" id="time" placeholder="z.B. 08:00:00">
+    </div>
+    <div class="form-group">
+      <button onclick="setAlarm()">Wecker/Timer einstellen</button>
+      <button onclick="stopAlarm()">Wecker/Timer stoppen</button>
+    </div>
+    <div id="timer">00:00:00</div> <!-- Hier wird die verbleibende Zeit angezeigt -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
